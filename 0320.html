@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta http-equiv="content-type" content="text/html; charset=utf-8">
+		<title>日本料理點餐系統</title>
+	</head>
+	<body>
+		<h1>日本料理點餐系統</h1>
+		<form method="POST" action="submit.php">
+		<table width="1000" height="2500" border="1" bgcolor="white">
+			<tr bgcolor="grey">
+				<td height="200" colspan="2" align="center">餐點內容</td>
+			</tr>
+			<tr>
+				<td width="300" height="500" rowspan="6">丼飯類:</td>
+				<tr>
+					<td width="700" height="100">
+						<input type="checkbox" name="varrice" value="1">親子丼
+						<input type="radio" name="varriceoption" value="1" checked>套餐
+						<input type="radio" name="varriceoption" value="2">單點
+					</td>
+				</tr>
+				<tr>
+					<td width="700" height="100">
+						<input type="checkbox" name="varrice" value="2">牛丼
+						<input type="radio" name="varriceoption" value="1" checked>套餐
+						<input type="radio" name="varriceoption" value="2">單點
+					</td>
+				</tr>
+				<tr>
+					<td width="700" height="100">
+						<input type="checkbox" name="varrice" value="3">天丼
+						<input type="radio" name="varriceoption" value="1" checked>套餐
+						<input type="radio" name="varriceoption" value="2">單點
+					</td>
+				</tr>
+				<tr>
+					<td width="700" height="100">
+						<input type="checkbox" name="varrice" value="4">咖哩飯
+						<input type="radio" name="varriceoption" value="1" checked>套餐
+						<input type="radio" name="varriceoption" value="2">單點
+					</td>
+				</tr>
+				<tr>
+					<td width="700" height="100">
+						<input type="checkbox" name="varrice" value="5">鰻魚飯
+						<input type="radio" name="varriceoption" value="1" checked>套餐
+						<input type="radio" name="varriceoption" value="2">單點
+					</td>
+				</tr>
+			</tr>
+			<tr>
+				<td width="300" height="300" rowspan="4">麵餐類:</td>
+				<tr>
+					<td width="700" height="100">
+						<input type="checkbox" name="varnoodle" value="1">炒烏龍麵
+						<input type="radio" name="varnoodleoption" value="1" checked>套餐
+						<input type="radio" name="varnoodleoption" value="2">單點
+					</td>
+				</tr>
+				<tr>
+					<td width="700" height="100">
+						<input type="checkbox" name="varnoodle" value="2">味增拉麵
+						<input type="radio" name="varnoodleoption" value="1" checked>套餐
+						<input type="radio" name="varnoodleoption" value="2">單點
+					</td>
+				</tr>
+				<tr>
+					<td width="700" height="100">
+						<input type="checkbox" name="varnoodle" value="3">豬骨拉麵
+						<input type="radio" name="varnoodleoption" value="1" checked>套餐
+						<input type="radio" name="varnoodleoption" value="2">單點
+					</td>
+				</tr>
+			</tr>
+			<tr>
+				<td width="300" height="300" rowspan="4">甜點類:</td>
+				<tr>
+					<td width="700" height="100">
+						<input type="checkbox" name="dessertoption" value="1">抹茶冰淇淋
+					</td>
+				</tr>
+				<tr>
+					<td width="700" height="100">
+						<input type="checkbox" name="dessertoption" value="2">烤布蕾
+					</td>
+				</tr>
+				<tr>
+					<td width="700" height="100">
+						<input type="checkbox" name="dessertoption" value="1">巧克力聖代
+					</td>
+				</tr>
+			</tr>
+			<tr bgcolor="grey">
+				<td height="200" colspan="2" align="center">顧客資料</td>
+			</tr>
+			<tr>
+				<td width="300" height="100" bgcolor="grey">桌號:</td>
+				<td width="700" height="100">
+					<input type="text" size="5" maxlength="2" name="tablenumber">號桌
+				</td>
+			</tr>
+			<tr>
+				<td width="300" height="100" bgcolor="grey">人數:</td>
+				<td width="700" height="100">
+					<input type="text" size="5" maxlength="2" name="peoplenumber">個人
+				</td>
+			</tr>
+			<tr>
+				<td width="300" height="100" bgcolor="grey">服務生:</td>
+				<td width="700" height="100">
+					<input type="text" size="20" maxlength="10" name="server">
+				</td>
+			</tr>
+			<tr>
+				<td width="300" height="500" bgcolor="grey">其他註記:</td>
+				<td width="700" height="500">
+					<input type="text" name="othernotes">
+				</td>
+			</tr>
+			<tr bgcolor="grey">
+				<td height="200" colspan="2" align="center">
+					<font style="cursor:pointer"><a href="javascript:confirm('確認送出？')"><input type="submit" name="submit" value="送出"></a></font>
+					<font style="cursor:pointer"><a href="javascript:confirm('確認清空？')"><input type="reset" name="reset" value="情空"></a></font>
+				</td>
+			</tr>
+		</table>
+	</form>
+	</body>
+</html>
